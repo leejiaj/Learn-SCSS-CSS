@@ -1,0 +1,34 @@
+.background_image{
+    position: absolute;
+    left: 10%;
+    bottom: 0px;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.background_image img {
+    width: 90%;
+    filter: blur(10px);
+    position: absolute;
+    left: -5%;
+    bottom: -5%;
+    opacity: 0.8;
+}
+
+// p{
+//     // setting transparent background color black 
+//     color: rgb(255, 255, 255); 
+//     background-color: inherit; 
+//   }
+
+main {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba(255,255,255,.3);
+	margin: 45px;
+	padding: 30px;
+	background: rgba(255,255,255,.1);
+	background: linear-gradient( rgba(255,255,255,.3), rgba(255,255,255,.07) 15% );
+	border-radius: 5px;
+}

@@ -1,0 +1,135 @@
+p{
+    background-color: inherit;
+    margin: 20px;
+}
+
+p:first-child::first-letter{
+    font-family: 'Sofia',cursive;
+    font-size: 8em;
+    float: left;
+    line-height: .1em;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 -11px 0 -23px;
+}
+
+label.tooltip{
+    position: relative;
+    border-bottom: 2px dotted #9a0156;
+    color: #9a0156;
+    cursor: help;
+}
+
+label.tooltip span{
+    width: 120px;
+    font-size: .9em;
+    line-height: 1.2em;
+    background-color: #630c3c;
+    color: #fff;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+}
+
+label.tooltip input:checked ~ span{
+    display: block;
+}
+
+label.tooltip input { display: none;}
+
+.preferencelabel{
+    display: block;
+    margin: 0 0 20px 0;
+    padding-left: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+.preferencelabel div {
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: background-color .3s;
+}
+
+.preferencelabel div::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: left 0.3s;
+}
+
+.preferencelabel input:checked + div {
+    border-color: #fff;
+    background-color: rgb(0, 200, 0);
+}
+
+.preferencelabel input:checked + div::after {
+    left: calc( 100% - 21px );
+    background-color: #fff;
+}
+
+.preferencelabel input { display: none;}
+
+
+
+
+.preferencelabelradio{
+    display: block;
+    margin: 0 0 20px 0;
+    padding-left: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+.preferencelabelradio div {
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: background-color .3s;
+}
+
+.preferencelabelradio div::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: left 0.3s;
+}
+
+.preferencelabelradio input:checked + div {
+    border-color: #fff;
+    background-color: rgb(0, 200, 0);
+}
+
+.preferencelabelradio input:checked + div::after {
+    left: calc( 100% - 21px );
+    background-color: #fff;
+}
+
+.preferencelabelradio input { display: none;}

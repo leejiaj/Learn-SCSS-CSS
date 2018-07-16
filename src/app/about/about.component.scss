@@ -1,0 +1,57 @@
+blockquote {
+	width: 75%;
+	margin: 50px auto 80px auto;
+	line-height: 1.3em;
+    color: #fff;
+    font-size: 1.6em;
+    position: relative;
+    left: 0px;
+    bottom: 0.08em;
+}
+
+blockquote::before{
+    content: '\201c';
+    font-size: 4.2em;
+    position: absolute;
+    left: -46px;
+    top: 15px;
+    color: rgba(255,255,255,.4)
+}
+
+blockquote::after{
+    content: '\201d';
+    font-size: 4.2em;
+    position: absolute;
+    bottom: -15px;
+    color: rgba(255,255,255,.4)
+}
+
+// blockquote cite {
+//     color: rgba(255,255,255,.4);
+//     display: block;
+//     font-size: .7em;
+//     position: absolute;
+//     bottom:-2.5em;
+// }
+
+// blockquote cite::before {
+// 	content: '\2014';
+// 	padding-right: 5px; 
+// }
+
+h1{
+    text-align: center;
+    position: relative;
+    margin: 0 -50px;
+}
+
+h1::before{
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px solid rgba(255,255,255,.6);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0.08em;
+}

@@ -1,0 +1,35 @@
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 40px;
+    display: inline-block;
+    color: white;
+    background-color: rgb(206, 247, 212);
+    border-radius: 5px;
+
+    }
+
+
+    .btn:visited{
+        color:rgb(148, 148, 20);
+    }
+  
+  .btn:hover {
+    color: #ccee71;
+  }
+
+  .btn::after{
+    content: '\00BB'; padding-left: 8px;
+  }
+
+  .btn.active {
+  color: #039be5;
+  } 
+
+  p{
+    background-color: #25550f;
+    transition: background-color 0.5s ease;
+  }
+  p:hover{
+    background-color: rgb(189, 123, 38);
+  }
